@@ -7,14 +7,35 @@
          <title>Login - E-Learning</title> <link rel="stylesheet" href="style.css"> 
         </head>
          <body>
-             <!-- Header -->
-               <header>
-                <div class="container">
-                 <h1>Plateforme E-Learning</h1>
-                    <nav>
-                         <ul>
-                             <li><a href="index.html">Home</a></li>
-                             <li><a href="courses.php">Courses</a></li>
-                             <li><a href="#">Parameters</a></li> 
-                        </ul>
-                 </header> <!-- Login Box --> <div class="signup-box"> <!-- we reuse the same class for styling --> <h2>Login</h2> <form action="login.php" method="post"> <input type="text" name="username" placeholder="Username" required><br> <input type="password" name="password" placeholder="Password" required><br> <input type="submit" value="Login"> </form> <p>Don't have an account? <a href="signup.html">Sign Up</a></p> </div> <!-- Footer --> <footer> <p>© 2026 Plateforme E-Learning</p> </footer> </body> </html> 
+            
+              <body>
+
+  <div id="main-content">
+      <header>
+          <h1>Plateforme E-Learning</h1>
+      </header>
+
+  </div>
+
+ 
+  <div class="signup-box" id="loginBox">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+          <input type="text" name="username" placeholder="Username" required><br>
+          <input type="password" name="password" placeholder="Password" required><br>
+          <input type="submit" value="Login">
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+  <script>
+const mainContent = document.getElementById('main-content');
+
+
+window.onload = () => {
+    mainContent.classList.add('blur');
+};
+</script>
+
+ </body>
+
+</html>
