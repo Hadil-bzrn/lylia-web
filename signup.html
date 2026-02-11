@@ -6,29 +6,38 @@
     <title>Sign Up - E-Learning</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
     <!-- Header -->
-    <header>
-        <h1>Plateforme E-Learning</h1>
-    </header>
+    <body>
+  <!-- Everything behind the signup box -->
+  <div id="main-content">
+      <header>
+          <h1>Plateforme E-Learning</h1>
+      </header>
+      <!-- Any other content you have on the page -->
+  </div>
 
-    <!-- Sign Up Box -->
-    <section class="signup-section">
-        <div class="signup-box">
-            <h2>Sign Up</h2>
-            <form action="signup.php" method="post">
-                <input type="text" name="username" placeholder="Username" required><br>
-                <input type="email" name="email" placeholder="Email" required><br>
-                <input type="password" name="password" placeholder="Password" required><br>
-                <input type="submit" value="Sign Up">
-            </form>
-            <p>Already have an account? <a href="login.html">Login</a></p>
-        </div>
-    </section>
+  <!-- Sign-Up Box -->
+  <div class="signup-box" id="signupBox">
+      <h2>Sign Up</h2>
+      <form action="signup.php" method="post">
+          <input type="text" name="username" placeholder="Username" required><br>
+          <input type="email" name="email" placeholder="Email" required><br>
+          <input type="password" name="password" placeholder="Password" required><br>
+          <input type="submit" value="Sign Up">
+      </form>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Plateforme E-Learning</p>
-    </footer>
-</body>
+  
+<script>
+const mainContent = document.getElementById('main-content');
+
+
+window.onload = () => {
+    mainContent.classList.add('blur');
+};
+</script>
+
+    </body>
 </html>
