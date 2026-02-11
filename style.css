@@ -305,3 +305,12 @@ footer{
     padding: 20px,0;
 
 }
+.blur {
+    filter: blur(8px); 
+    transition: filter 0.3s ease;
+}
+.blur {
+    filter: blur(8px); 
+    transition: filter 0.3s ease;
+}
+
